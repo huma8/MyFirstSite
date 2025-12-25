@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--viewport kodu sayesinde sitenin görüntüsü diğer 
+        cihazlara göre uygun bir hale getirilir.-->
+
+    <title>Sale-Cat</title>
+    <link rel="icon" type="image/x-icon" href="assets\cat.png">
+    <!--bu bir favicon site isminin yanında görünen resimdir.
+    favicon.io ya bakmayı unutma oradan aldığın resimleri sitenin ana klasörüne atıyorsun.
+    ve kodları buraya yazıyorsun.-->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-menu">
+        <img id="mascott" src="assets\cat.png" alt="uygulamanın maskotu olan alışveriş sepetine oturmuş kedi">
+        <input id="input-field" type="text" placeholder="Bread">
+        <button id="add-btn" title="Sipariş Ver!">Add To Cart</button>
+        <ul id="shopping-list">
+        </ul>
+
+        <!-- ikisi de module olmalı çünkü import veya export içeriyorlar.-->
+        <script src="functions.js" type="module"></script>
+        <script src="script.js" type="module"></script>
+    </div>
+</body>
+</html>

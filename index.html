@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<!--klavyende ctrl + d yaparak birden fazla ögeyi seçebilirsin.-->
+
+<html>
+    <head>
+        <title>Ertugrul' un sitesi</title>
+        <link rel="stylesheet" href="style.css">
+        <!--href kısmına css belgesinin ismini yazıyoruz-->
+
+        <!--font için: veya @font-face kullanırsın.-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    </head>
+
+    <body class="main txt1">
+ 
+
+        <div class="nav-bar flex border1">
+            <div class="nav-item">Anasayfa</div>
+            <div class="nav-item">Hakkımızda</div>
+            <div class="nav-item">Mağaza</div>
+            <div class="nav-item">Görüşlerinizi Paylaşın</div>
+        </div>
+
+        <div class="card border1 margin1 bg1">
+            <h1>Welcome to my first website</h1>
+            <hr>
+            <p>This is how i use my knowledge to show you my website 
+                <a href="https://translate.google.com/?hl=tr&sl=en&tl=tr&op=translate" target = "_blank"> click here plssss!</a>
+            </p>
+            <br>
+            <div class="flex">
+                <input class="search-txt border1" type="text" name="searching" id="searching" placeholder="what are you searching for?">
+                <button class="search-btn border1" >Search</button>
+                <button class="link-btn border1" >Surprise me!</button>
+            </div>
+        </div>
+
+        <div class="card border1 margin1 bg1">
+
+            <h1 id="greet1"></h1>
+            <hr>
+
+            <h1>Sayfamı ilk kez ziyaret ediyorsan tıkla!</h1>
+            <h1 id="counter1">0</h1>
+
+            <div class="btn-section">
+                <!--İLK JAVASCRİPT KODUMUZ HAYIRLI OLSUN.-->
+                <button class="btn" id="increment-btn" onclick="increment()">INCREMENT</button>
+                <button class="btn" id="save-btn" onclick="save()">SAVE THE NUMBER</button>
+            </div>
+            <h2 id="entries1">Previous Entries = </h2>
+            <!--Aslında burada da <script src="index.js"></script> komutu var ama aşağıdaki
+            karta yazmak yetiyor.-->
+
+        </div>
+
+        <div class="card border1 margin1 bg1">
+
+            <h1>ŞİMDİ SANA HESAP MAKİNEMİ GÖSTERECEĞİM</h1>
+            <hr>
+            <br>
+            <div>
+                <h3 class="num" id="num1"></h3>
+                <h3 class="num" id="num2">10</h3>
+            </div>
+            <div class="btn-section">
+                <button class="btn" id="add-btn" onclick="add()">ADD</button>
+                <button class="btn" id="subtract-btn" onclick="subtract()">SUBTRACT</button>
+                <button class="btn" id="divide-btn" onclick="divide()">DIVIDE</button>
+                <button class="btn" id="multiply-btn" onclick="multiply()">MULTIPLY</button>
+            </div>
+            <p class="num" id="result1">RESULT = </p>
+            <!--Aslında burada da <script src="index.js"></script> komutu var ama aşağıdaki
+            karta yazmak yetiyor.-->
+
+        </div>
+
+        <div class="card border1 margin1 sayioyunu">
+
+            <h1>BU BİR SAYI TUTTURMACA OYUNUDUR</h1>
+            <hr>
+            <br>
+            <p id="msg-gameround">Bir El Daha Oynamak İster Misin?</p>
+            <p id="cards-element">Kartlar:</p>
+            <p id="sum-element">Toplam:</p>
+            <button id="start-cardgame" onclick="startGame()">Oyunu Başlat</button>
+            <button id="draw-new-card" onclick="newCard()">Yeni Bir Sayı Çek</button>
+            <p id="para1">Paran: </p>
+            <script src="index.js"></script>
+
+        
+        </div>
+
+        <!--bg1 i kaldırdım çünkü kendine ait bir arkaplanı var.-->
+        <div class="card border1 margin1 bg1">
+            <h2>Hakkımda</h2>
+            <hr>
+            <div id="poncuk"></div>
+            <p>Ben Ertuğrul KOÇAK. resim çizmeyi, oyun oynamayı, kitap okumayı severim. 
+                <!--span fonksiyonu div gibi ama display:block olarak çalışmaz. 
+                bununla alt çizgi vb atılabilir ama kendine ait class gerek 
+                (call-to-action)-->
+                <span class="cto">programlama</span>
+                ile ilgiliyim. kod yazmayı severim. 22 yaşındayım öğrenmeyi ve 
+                <span id="underline1">öğretmeyi seviyorum.</span>  
+                kodlandde öğretmenlik yapıyorum.
+            </p>
+        </div>
+
+        <div class="card border1 margin1 bg1">
+            <h2>Üzerine Çalıştığım Konular</h2>
+            <hr>
+            <ul>
+                <li>dini</li>
+                <li>resim</li>
+                <li>inşaat</li>
+                <li>programcılık</li>
+                <li>çömlekçilik</li>
+            </ul>
+        </div>
+ 
+        <div class="card border1 margin1 bg1">
+            <h2>Takip Ettiğim Bazı Youtube Kanalları</h2>
+            <hr>
+            <img width="10%" 
+                src="https://yt3.googleusercontent.com/dfccCeH_TYoJaY0ctuk4B0pGXFVJtTujze-lbWatd9TXpDrUCjpsTRxgRiqk30yDiI_AYeSxfNU=s176-c-k-c0x00ffffff-no-rj" 
+                width="30%" 
+                alt="zinzinzibidi youtube kanalının logosu">  
+            <br>
+            <a href="https://www.youtube.com/@zinzinzibidi/playlists" target="_blank">zinzinzibidi kanalı.</a>
+        </div>
+
+        <!--RESİMLER GÖZÜKMÜYOR NEDENSE? DOSYA YOLUNA TİKKATTTTTT!-->
+        <div class="card border1 margin1 bg1">
+            <h2>Resim Galerim</h2>
+            <hr>
+            <div class = "gallery border1">
+                <img class ="pics" 
+                    src="https://ankararesimkursu.net/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-23-at-18.35.26-9-rotated-e1625353940685.jpeg" 
+                    width="50" 
+                    alt="evde bulunan eşyaların karakalem çizimi: ütü, çaydanlık, dibek, örtü.">
+                <img class ="pics" 
+                    src="https://icdn.tgrthaber.com.tr/images/ckfiles/images/3(506).jpg" 
+                    width="50" 
+                    alt="kağıt üzerine çizilmiş 3 boyutlu küp görseli.">
+                <img class ="pics" 
+                    src="https://i.pinimg.com/564x/ac/58/7f/ac587fc0c34d0f7f7d6abd9d39a37b03.jpg" 
+                    width="50" 
+                    alt="gökkuşağı kusan bulut çizimi.">
+            </div>
+        </div>
+
+        <div class=" card border1 margin1 bg1">
+            <h2>Alman Bayrağı</h2>
+            <hr>
+            <div class = "black"></div>
+            <div class = "red"></div>
+            <div class = "yellow"></div>
+            <br>
+        </div>
+
+
+    </body>
+
+
+</html>

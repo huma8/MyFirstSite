@@ -1,0 +1,78 @@
+/*serverde yaptığın bu değişiklikleri göremeyeceksin o yüzden index.htmlden çalıştırıp tasarımı görebilirsin.*/
+
+body {
+    text-align: center;
+    background-color: #EEF0F4;
+    font-family: 'Rubik', sans-serif;
+    user-select: none;
+}
+
+.main-menu {
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    max-width: 320px;
+    /*her telefon bu büyüklüğü gösterebilir.*/
+}
+
+#mascott {
+    width: 100px;
+    margin: auto;
+}
+
+#input-field {  
+    font-family: 'Rubik', sans-serif;
+    text-align: center; 
+    font-size: 20px;
+    background-color: #DCE1EB;
+    color: #432000;
+    margin-top: 10px;
+    padding: 10px 5px;
+    border: 0;
+    border-radius: 5px;
+}
+
+#add-btn {
+    font-family: 'Rubik', sans-serif;
+    text-align: center; 
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: #AC485A;
+    color: #FDFDFD;
+    margin-top: 10px;
+    padding: 10px 5px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+}
+
+#add-btn:hover {
+    background-color: #432000;
+    cursor: pointer;
+}
+
+#shopping-list {
+    list-style-type: none;
+    padding: 0px;
+    /*bu ikisi ile hem noktayı hem de boşluğunu kaldırabilirsin.*/
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+}
+
+#shopping-list li{
+    background-color: #fffdf8;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+
+    /*bu kod sayesinde bloklar containerı tam bir şekilde dolduruyor.*/
+    flex-grow: 1;
+}
+
+#shopping-list li:hover {
+    background-color: #FFECC7;
+    cursor: pointer;
+}

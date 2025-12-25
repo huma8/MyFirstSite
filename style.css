@@ -1,0 +1,320 @@
+/*klavyende ctrl + d yaparak birden fazla ögeyi seçebilirsin.
+COOLORS sitesinden renk paleti seçebilirsin çok işine yarayacağına eminim.
+*/
+
+@font-face {
+    font-family: "Tektur";
+    /*url lere sakın / işareti ile başlama :D*/
+    src: url(fonts/Tektur-VariableFont_wdth\,wght.ttf);
+}
+
+.txt1 {
+    color: #F5F5DC;
+    font-size: large;
+    font-weight: bold;
+    font-style: normal;
+    /*yeni eklediğimiz font:*/
+    font-family: tektur;    
+}
+
+a {
+    color: #00ff00;
+    text-shadow: 0px 0px 10px #222222;
+}
+
+
+/*bu son yazdığım komutlar çalışmadı düzgün.
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    bunları aşağıda card sınıfının içine yazdım 
+    çünkü flexbox diğer elemanlarla beraber çalışıyormuş.
+
+*/
+h1, h2{
+    padding: 2px 6px;
+    margin-bottom: 5px;
+    color: #00b7eb;
+    /*gölge için 4 değer gerekli ilk ikisi dikey ve yatay gölge uzunluğudur. 
+    üçüncü değer blur(bulanıklılıktır.)*/
+    text-shadow: 3px 3px 3px #222222;
+}
+
+h2 {
+    background-color: #222222;
+}
+
+hr {
+    width: 75%;
+    height: 2px;
+    border-radius: 100px;
+    background-color: #00b7eb;
+}
+
+/*ARKAPLAN RESMİ NASIL EKLENİR?*/
+
+.main {
+    /*url lere sakın / işareti ile başlama :D*/
+    background-image: url("images/giphy.gif");
+    background-size: cover;
+    text-align: center;
+    padding: 5%;
+    padding-top: 1%;
+    display: block;
+}
+
+.cto {
+    background-color:#00b7eb;
+    padding: 2px 6px;
+}
+
+#underline1 {
+    border-bottom: 2px solid #00b7eb;
+}
+
+#poncuk {
+    width: 250px;
+    height: 250px;
+    border : 3px solid #F5F5DC;
+    /*url lere sakın / işareti ile başlama :D*/
+    background-image: url(images/poncuk.png);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+/*mouse üzerine gelince*/
+#poncuk:hover {
+    /*url lere sakın / işareti ile başlama :D*/
+    background-image: url(images/vegetables.jpg);
+    border: 3px solid #00b7eb;
+}
+/*noiyssss*/
+
+.bg1 {
+    background: radial-gradient(#A30000, #222222);
+}
+
+.border1 {
+    border: 5px solid #00b7eb;
+    border-radius: 30px;
+    border-style: solid;
+    border-bottom: #222222 5px solid;
+}
+
+/*bir bak buraya neden noktalar gözükmüyor?*/
+.flex, li {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: stretch;
+    /*içine birden fazla değer alabiliyor. start / end / space-around / space-between / center */
+}
+
+.card {
+    padding: 5%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery {
+    padding: 5%;
+    border-color: transparent;
+}
+
+.margin1 {
+    /* böyle yazacağına
+    margin-top: 10px;
+    margin-bottom: 10px;
+    şöyle yazarsın:
+    */
+    margin: 10px auto;
+}
+
+.nav-bar {
+    padding: 5px;
+    background-color: green;
+    border-color: black;
+}
+
+.nav-item {
+    color: black;
+    border: 3px solid black;
+    background-color: #F5F5DC;
+    border-radius: 10px;
+    margin-left: 4px;
+    margin-right: 4px;
+    font-weight: 1000;
+    padding: 5px;
+}
+
+.search-txt { 
+    font-family: inherit;  
+    width: 100%;
+    line-height: 30px;
+    text-indent: 15px;
+    border-radius: 24px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    color: #A30000;
+    background-color: #F5F5DC;
+    font-weight: 750;
+}
+
+.search-btn {
+    /*buttonlar fontları kendilerine dahil etmedikleri için onlara 
+    ayrı özen göstermek gerek.
+    Veya font-family: inherit; komutunu yazabilirsin.
+    Veya bir font indirirsin ve onun ttf dosyasını 
+    @font-face ile kullanmaya başlarsın yukarı bak!
+    font-family: 'Tektur', cursive;*/
+    font-family: inherit;
+    font-weight: 600;
+    width: 100px;
+    text-indent: -7px;
+    border-radius: 24px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    color: #A30000;
+    background-color: #F5F5DC;
+    margin-left: 5px;
+    text-shadow: 0px 0px 3px #222222;
+}
+
+.link-btn {
+    font-family: inherit;  
+    font-weight: 600;
+    width: 115px;
+    text-indent: -5px;
+    border-radius: 10px;
+    color: #A30000;
+    background-color: #F5F5DC;
+    margin-left: 5px;
+    text-shadow: 0px 0px 3px #222222;
+}
+
+.pics {
+    margin : 3px;
+    width: 30%;
+    max-width: 300px;
+    display: inline;
+    border-radius: 50%;
+}
+
+
+
+/*flag*/
+.black {
+    background: black;
+    width: 150px;
+    height: 30px;
+}
+
+.red {
+    background: red;
+    width: 150px;
+    height: 30px;
+}
+
+.yellow {
+    background: yellow;
+    width: 150px;
+    height: 30px;
+}
+
+
+/* JAVASCRİPT DERSLERİNE BURDAN DEVAM EDİYORUM!*/
+/*                              /\
+                              /\  //\\
+                       /\    //\\///\\\        /\
+                      //\\  ///\////\\\\  /\  //\\
+         /\          /  ^ \/^ ^/^  ^  ^ \/^ \/  ^ \
+        / ^\    /\  / ^   /  ^/ ^ ^ ^   ^\ ^/  ^^  \
+       /^   \  / ^\/ ^ ^   ^ / ^  ^    ^  \/ ^   ^  \       *
+      /  ^ ^ \/^  ^\ ^ ^ ^   ^  ^   ^   ____  ^   ^  \     /|\
+     / ^ ^  ^ \ ^  _\___________________|  |_____^ ^  \   /||o\
+    / ^^  ^ ^ ^\  /______________________________\ ^ ^ \ /|o|||\
+   /  ^  ^^ ^ ^  /________________________________\  ^  /|||||o|\
+  /^ ^  ^ ^^  ^    ||___|___||||||||||||___|__|||      /||o||||||\       |
+ / ^   ^   ^    ^  ||___|___||||||||||||___|__|||          | |           |
+/ ^ ^ ^  ^  ^  ^   ||||||||||||||||||||||||||||||oooooooooo| |ooooooo  |
+ooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+
+.btn-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-weight: bolder;
+}
+
+.btn {
+    background-color:#00ff00;
+    border-radius: 10px;
+    padding: 10px 10px;
+    border: #00b7eb 2px solid;
+    font-weight: inherit;
+    margin: 15px 3px;
+}
+.btn:hover {
+    background-color: #00b7eb;
+    border: #00ff00 2px solid;
+    font-weight: inherit;
+}
+
+#entries1 {
+    background-color: #222222;
+}
+
+/*hesap makinesi---------------------------------------------------------------*/
+
+.num {
+    display: inline;
+    padding: 0px 10px;
+    border-bottom: #00b7eb solid 2px;
+}
+
+
+/*SAYI OYUNU---------------------------------------------------------------------*/
+
+.sayioyunu {
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #222222;
+    background-size: cover;
+    border-bottom-color: #00b7eb;
+    text-shadow: 0px 0px 10px #A30000;
+}
+
+#msg-gameround {
+    font-weight: bolder;
+    font-style: italic;
+}
+
+#start-cardgame {
+    background-color:#00b7eb;
+    color: #222222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    border-radius: 10px;
+    padding: 5px 5px;
+    border: none;
+    margin: 15px 3px;
+}
+
+#draw-new-card {
+    background-color:#00b7eb;
+    color: #222222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    border-radius: 10px;
+    padding: 5px 5px;
+    border: none;
+    margin: 15px 3px;
+}
+
